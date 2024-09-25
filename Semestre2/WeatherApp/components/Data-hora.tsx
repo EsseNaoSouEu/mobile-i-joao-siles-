@@ -12,7 +12,7 @@ const DataHora = () => {
                 <Text style={styles.data}>Seg, 24/09</Text> 
             </View>
         </View>
-        <View>
+        <View style={styles.rightAlign}>
             <Text style={styles.local}>Brasil/São Paulo</Text>
             <Text style={styles.latlon}>-23.5489S -46.6388O</Text>
         </View>
@@ -30,16 +30,25 @@ const styles = StyleSheet.create({
 },
  horario: {
     fontSize: 45,
-    color: 'white',
+   
+    fontWeight: '700',
+    marginTop: 50,
  },
  data: {
     fontSize: 30,
-    color: 'white,'
+    fontWeight: '500',
+ },
+ rightAlign: {
+    textAlign: 'right',
+    marginTop: 60,
  },
  local: {
-
+    fontSize: 15,
+    textAlign: 'right',
+    fontWeight: '700',
  },
  latlon: {
-
+    fontSize: 15,
+    fontWeight: '700',
  },
 });
